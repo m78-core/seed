@@ -1,0 +1,30 @@
+{
+  "files": [
+    "src/index.ts",
+    "src/cacheMiddleware.ts",
+    "src/devtoolMiddleware.ts",
+    "node_modules/@types/jest/index.d.ts"
+  ],
+  "include": ["types"],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "esm",
+    "umd",
+  ],
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@m78/seed": ["src/index.ts"]
+    },
+    "target": "es5",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "jsx": "react",
+    "lib": ["dom", "esnext"]
+//    "sourceMap": true
+  }
+}
